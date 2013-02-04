@@ -1,0 +1,62 @@
+1) Unpack "forgotten-password-v.1.2.rar" in the site root or copy the files from the archive in their coresponding folders in the site root.
+	For Example:
+	All .php files (located in: root\cmp) have to be placed in cmp folder (located in: root\cmp) of the site root.
+
+2) Create 2 new components.
+
+	2.1) Create a component (Go to Control Panel(cp) -> System -> Components -> Add) and set the following values: 
+	
+		2.1.1) system name 		-> activatepassword
+		2.1.2) public name 		-> Activate Password
+		2.1.3) PHP Class Name 	-> cmp/front/ActivePassword
+	
+		and click Save.
+
+	2.2) Create a component (Go to Control Panel(cp) -> System -> Components -> Add) and set the following values: 
+	
+		2.2.1) system name 		-> forgottenpassword
+		2.2.2) public name 		-> Forgotten Password
+		2.2.3) PHP Class Name 	-> cmp/front/ForgottenPassword
+		
+		and click Save.
+
+3) Create 2 pages (Go to Control Panel(cp) -> System -> Pages -> Add) with the following values: 	
+	
+	3.1) Create a page (Go to Control Panel(cp) -> System -> Pages -> Add) and set the following values:
+	
+		3.1.1) system name 		-> activatepassword
+		3.1.2) public name 		-> Activate Password
+		3.1.3) Component Name 	-> Activate Password
+
+		and click Save.
+	
+	3.2) Create a page (Go to Control Panel(cp) -> System -> Pages -> Add) and set the following values:
+	
+		3.2.1) system name 		-> forgottenpassword
+		3.2.2) public name 		-> Forgotten Password
+		3.2.3) Component Name 	-> Forgotten password
+		3.2.4) Go to Control Panel(cp) -> System -> Components -> Module Settings
+		
+				Module Settings of forgottenpassword:
+					Destination after sending the password: Activate Password
+				Module Settings of activatepassword:
+					Profile Page -> select profile page or page where you want to go after activating account (optional)
+
+4) Go to Login Module Settings
+	4.1.1) Choose forgotten page -> Forgotten Password	
+	
+	
+5) Import lingual variables:
+	
+		5.1.1) Go to Control Panel(cp) -> System -> Languages -> "Import from a File" (default English version is provided)
+		5.1.2) choose en.ini file
+		5.1.3) click "Import from file"
+	
+	Note: Default language is English. If you want to import lingaul variables for a different language you can either translate the values in the ini file first or do it later from "Language variables" in the Control Panel.
+
+6) Go to URL http://your_site_domain/
+	6.1.1) Click forgotten Password in login area		
+
+That is all :)
+
+Thank you for your interest and enjoy SBND F&CMS - Framework & CMS for PHP developers.
