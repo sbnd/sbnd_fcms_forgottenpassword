@@ -1,9 +1,7 @@
-sbnd_fcms_forgottenpassword
+Forgotten Password Component
 ===========================
+Component, supporting all steps and functionality that are taken when a user forgets its password and want to receive a new one. i.e. sending mail with activation code , link to activation page, etc. 
 
-Forgotten Password package
+The component has a frontend only that work for all already registered users.
 
-Frontend component for forgotten password functionality, sending mail with activation code and link to activation page. 
-
-backend component(s) : YES (users module) 
-frontend component(s): YES 
+For more information: http://fcms.sbnd.net/
