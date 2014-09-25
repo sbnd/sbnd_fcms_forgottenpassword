@@ -5,8 +5,8 @@
 
 
 ===========================
-Component, supporting all steps and functionality that are taken when a user forgets its password and want to receive a new one. i.e. sending mail with activation code , link to activation page, etc. 
+This component supports the functionality and steps that are taken when a user forgets his/her password and wants to receive a new one. For example, sending an email with an activation code, a link to the activation page and so on. 
 
-**The component has a frontend only** that work for all already registered users.
+The component only has a frontend part that works for all already registered users.
 
-For more information: **http://fcms.sbnd.net/**
+For more information, see: **http://fcms.sbnd.net/**
